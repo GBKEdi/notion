@@ -7,12 +7,8 @@
     <title>Greetings</title>
 
     <style>
-
-
         body{
             font-variant-caps: all-petite-caps;
-
-
         }
 
         .widget {
@@ -27,10 +23,8 @@
             border: 3px solid #000000;
             border-radius: 5px;
             box-shadow: 2px 2px 1px 0px #000000;
-
         }
-
-           
+  
         .greet{
             font-size: 3em;
         }
@@ -55,18 +49,9 @@
             font-size: 1em;
             display: inline-block;
         }
-
-     
-
-
-
-
     </style>
 </head>
 <body>
-
-
-
 
 <div class="container>">
     <div class="widget">
@@ -81,16 +66,8 @@
                     <div class="colon">:</div>
                     <div class="time" id="sec"></div>
                 </div>
-           
-
-        
-
     </div>
 </div>
-        
-
-
-
 <script>
 
 function dispalyGreetings(today){
@@ -103,7 +80,6 @@ function dispalyGreetings(today){
         else if (hrs >= 17 && hrs <= 24)
             greet = 'Good Evening  '+name;
         document.getElementById('greet').innerHTML = greet;
-
     }
 
     function dispalyDate(today) {  
@@ -118,12 +94,9 @@ function dispalyGreetings(today){
         var date = today.getDate();
         var year = today.getFullYear();
         document.getElementById('date').innerHTML =dayName+", "+monthName+" "+date+" "+year;
-
     }
 
-
     function dispalyClock(today) {
-
         var hour = padZeros(twelveHour(today.getHours()));
         var minutes = padZeros(today.getMinutes());
         var seconds = padZeros(today.getSeconds());
